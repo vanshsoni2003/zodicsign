@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* overflow: hidden; */
+  position: relative;
+  background-color: rgb(155, 143, 143);
+}
+
+.solar-system {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ccc;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+
+.container {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  position: relative;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  font-size: 1rem;
+  margin: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #ff4b8c;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff55d4;
+}
+.zodiac-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 15px;
+  width: 60%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  left: 100px;
+
+}
+
+.zodiac-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.zodiac-card p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}  
+
+
+

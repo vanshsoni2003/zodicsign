@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zodiac Sign Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="solar-system">
+      <div class="sun"></div>
+      <div class="planet orbit1"></div>
+      <div class="planet orbit2"></div>
+      <div class="planet orbit3"></div>
+      <div class="planet orbit4"></div>
+    </div>
+
+    <div class="container">
+      <h1>Find Your Zodiac Sign</h1>
+
+      <div class="form-container">
+        <input type="text" id="first-name" placeholder="First Name" /><br />
+        <input type="text" id="last-name" placeholder="Last Name" /><br />
+        <input
+          type="number"
+          id="birth-day"
+          placeholder="Day (1-31)"
+          min="1"
+          max="31"
+        /><br />
+        <input
+          type="number"
+          id="birth-month"
+          placeholder="Month (1-12)"
+          min="1"
+          max="12"
+        /><br />
+        <input type="number" id="birth-year" placeholder="Year" /><br />
+        <button id="submit-btn">Get Zodiac Info</button>
+      </div>
+      <div class="zodiac-card" id="zodiac-card" style="display: none">
+        <h2 id="zodiac-name"></h2>
+        <p id="complement-message"></p>
+        <p id="empathy-message"></p>
+        <p id="recommendation"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
